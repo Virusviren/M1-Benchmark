@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M1-benchmark</title>
+  </head>
+  <body>
+    <h1>This is the heading</h1>
+    <ol>
+      <li>Name:Viren</li>
+      <li>email:virenpatil1@outlook.com</li>
+      <li>age:23</li>
+    </ol>
+    <table>
+      <tr>
+        <th>col 1</th>
+        <th>col 2</th>
+        <th>col 3</th>
+        <th>col 4</th>
+        <th>col 5</th>
+      </tr>
+      <tr>
+        <th>col 1</th>
+        <th>col 2</th>
+        <th>col 3</th>
+        <th>col 4</th>
+        <th>col 5</th>
+      </tr>
+      <tr>
+        <th>col 1</th>
+        <th>col 2</th>
+        <th>col 3</th>
+        <th>col 4</th>
+        <th>col 5</th>
+      </tr>
+      <tr>
+        <th>col 1</th>
+        <th>col 2</th>
+        <th>col 3</th>
+        <th>col 4</th>
+        <th>col 5</th>
+      </tr>
+      <tr>
+        <th>col 1</th>
+        <th>col 2</th>
+        <th>col 3</th>
+        <th>col 4</th>
+        <th>col 5</th>
+      </tr>
+    </table>
+  </body>
+  <script>
+    let x = "John";
+    let y = "Doe";
+    console.log(x + "<>" + y);
+    let info = {
+      name: "Viren",
+      surname: "Patil",
+      email: "virenpatil1@outlook.com",
+    };
+    delete info.email;
+    let arr = [
+      "Hello",
+      "how",
+      "what",
+      "air",
+      "mouse",
+      "rat",
+      "songs",
+      "iphone",
+      "tic-tac",
+      "davidoff",
+    ];
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    }
+    let ran = Math.floor(Math.random() * 101);
+    console.log(ran);
+
+    function arrOfArr(num) {
+      let arr1 = [];
+      for (let i = 0; i < num; i++) {
+        let a1 = [];
+        for (let i = 0; i < num; i++) {
+          let ran = Math.floor(Math.random() * 101);
+          a1.push(ran);
+        }
+        arr1.push(a1);
+      }
+      return arr1;
+    }
+
+    function longestArr(arr1, arr2) {
+      if (arr1 < arr2) {
+        console.log(arr2 + " is bigger");
+      } else {
+        console.log(arr1 + " is bigger");
+      }
+    }
+    longestArr([1, 2, 5, 6, 3, 5, 3, 43], [1, 2, 3]);
+
+    function higherSum(arr1, arr2) {
+      let a = arr1.reduce((a, b) => {
+        return a + b;
+      }, 0);
+      let b = arr2.reduce((a, b) => {
+        return a + b;
+      }, 0);
+      return a > b ? a : b;
+    }
+  </script>
+</html>
